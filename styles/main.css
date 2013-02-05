@@ -1,0 +1,116 @@
+// main.css
+
+@font-face {
+  font-family: 'League Gothic';
+  src: url('LeagueGothic-Regular.svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+	margin-top: 0px;
+	padding: 0px;
+}
+
+body {
+  background: url('../img/maze.png');
+  min-width: 430px;
+}
+
+#player {
+	float:right;
+	width: 320px;
+	height: 225px;
+	border-radius: 5px;
+}
+#play {
+  margin-left: 140px;
+}
+
+#channelsholder {
+	border-radius: 5px;
+	height: 210px;
+	margin-right: 325px;
+	margin-bottom: 20px;
+  min-width: 89px;
+  //background: white;
+  text-align: center;
+}
+
+#channels {
+  display: block;
+  margin-left: auto;
+  overflow-y: auto;
+	overflow-x: hidden;
+	padding: 8px 0px 8px 3px;
+	height: 100%;
+  min-width: inherit;
+  background: white;
+}
+
+.shadow-top {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 20px 40px -20px black inset;
+    height: 40px;
+    width: inherit;
+    margin-bottom: -40px;
+    border-radius: 5px;
+    pointer-events:none;
+}
+.shadow-bottom {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px -20px 40px -20px black inset;
+    height: 40px;
+    width: inherit;
+    margin-top: -40px;
+    border-radius: 5px;
+    pointer-events:none;
+}
+
+#html5 {
+  position:fixed; 
+  bottom:4px; 
+  right:-3px; 
+  height: 20px;
+}
+
+#janmaat {
+  position:fixed; 
+  bottom:1px; 
+  right:52px;
+  color: rgb(51,51,51);
+  font: 1.28em League Gothic;
+}
+
+h1 {
+	text-align: center;
+	width: 100%;
+	line-height: 120%;
+	padding-top: 00px;
+	font-family: Gill Sans Ultra Bold, sans-serif;
+	color: rgb(66,66,66);
+	letter-spacing: -0.05em;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
